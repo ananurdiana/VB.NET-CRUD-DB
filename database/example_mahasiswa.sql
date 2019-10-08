@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: 10.83.41.228    Database: example
+-- Host: xxx.xxx.xxx.xxx    Database: example
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.1.40-MariaDB
 
