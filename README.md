@@ -228,3 +228,6 @@ End Class
 ### Menjalankan Program
 Untuk menjalankan program, dapat menekan tombol ```F5``` di keyboard, atau dengan menu ```DEBUG -> Start Debugging```
 ![alt text](https://raw.githubusercontent.com/ananurdiana/vbnet_cruddb/master/dokumen/10-Menjalankan%20program.png "Menjalankan Program")
+
+## SQLite
+## SQL Server Express
