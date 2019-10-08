@@ -3,7 +3,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class frmMySQL
 
-    Dim conn As New MySqlConnection("Server=10.83.41.228; user=isd; password=isd25108; database=example")
+    Dim conn As New MySqlConnection("Server=xxx.xxx.xxx.xxx; user=xxx; password=xxx; database=example")
     Dim perintah As New MySqlCommand
     Dim data As New MySqlDataAdapter
     Dim ds As New DataSet
