@@ -38,7 +38,7 @@ Public Class frmMySQL
     End Sub
 
     Private Sub frmMySQL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        konek("10.83.41.228", "isd", "isd25108", "example")
+        konek("xxx.xxx.xxx.xxx", "username", "password", "example")
         tampilData()
         statusTombol(True, False, False)
         statusInput(False, False, False)
