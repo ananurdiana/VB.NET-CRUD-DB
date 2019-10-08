@@ -1,0 +1,10 @@
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.exe.config
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET_CRUD_DB.Resources.resources
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.vbproj.GenerateResource.Cache
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.exe
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.pdb
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.xml
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.exe
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.xml
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.pdb
+C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET_CRUD_DB.frmMySQL.resources
