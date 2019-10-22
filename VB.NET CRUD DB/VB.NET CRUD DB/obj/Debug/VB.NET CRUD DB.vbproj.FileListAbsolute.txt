@@ -8,3 +8,22 @@ C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CR
 C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.xml
 C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.pdb
 C:\Users\63092094\Documents\Visual Studio 2013\Projects\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET_CRUD_DB.frmMySQL.resources
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.exe.config
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.exe
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.xml
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.pdb
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.exe
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.pdb
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\VB.NET CRUD DB.xml
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\EntityFramework.dll
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\EntityFramework.SqlServer.dll
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\System.Data.SQLite.dll
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\System.Data.SQLite.EF6.dll
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\System.Data.SQLite.Linq.dll
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\EntityFramework.xml
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\EntityFramework.SqlServer.xml
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\bin\Debug\System.Data.SQLite.xml
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET_CRUD_DB.frmMySQL.resources
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET_CRUD_DB.frmSQLite.resources
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET_CRUD_DB.Resources.resources
+E:\tmp\vbnet_cruddb\VB.NET CRUD DB\VB.NET CRUD DB\obj\Debug\VB.NET CRUD DB.vbproj.GenerateResource.Cache
