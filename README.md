@@ -376,6 +376,41 @@ Public Class frmSQLite
     End Sub
 End Class
 ```
+## WebRequest
+Untuk melakukan request ke API
+```vb
+Private Sub btnLamp_Click(sender As Object, e As EventArgs)
+    If Me.btnLamp.Text = "On" Then
+        Try
+            Dim req As WebRequest = WebRequest.Create("https://towering-sword.glitch.me/api/lampu/insert/1")
+            Dim res As WebResponse = req.GetResponse()
+            Dim resDS As Stream = res.GetResponseStream()
+            Dim reader As StreamReader = New StreamReader(resDS)
+            Dim resServer As String = reader.ReadToEnd()
+            Me.txtResponse.Text = resServer
+            res.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            Throw
+        End Try
+        Me.btnLamp.Text = "Off"
+    Else If Me.btnLamp.Text = "Off" Then
+        Try
+            Dim req As WebRequest = WebRequest.Create("https://towering-sword.glitch.me/api/lampu/insert/0")
+            Dim res As WebResponse = req.GetResponse()
+            Dim resDS As Stream = res.GetResponseStream()
+            Dim reader As StreamReader = New StreamReader(resDS)
+            Dim resServer As String = reader.ReadToEnd()
+            Me.txtResponse.Text = resServer
+            res.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            Throw
+        End Try
+        Me.btnLamp.Text = "On"
+    End If
+End Sub
+```
 
 ## SQL Server Express
 
