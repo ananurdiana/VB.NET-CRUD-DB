@@ -382,7 +382,7 @@ Untuk melakukan request ke API
 Private Sub btnLamp_Click(sender As Object, e As EventArgs)
     If Me.btnLamp.Text = "On" Then
         Try
-            Dim req As WebRequest = WebRequest.Create("https://towering-sword.glitch.me/api/lampu/insert/1")
+            Dim req As WebRequest = WebRequest.Create("https://towering-sword.glitch.me/api/lampu/insert/1/" + txtDeviceName.Text)
             Dim res As WebResponse = req.GetResponse()
             Dim resDS As Stream = res.GetResponseStream()
             Dim reader As StreamReader = New StreamReader(resDS)
@@ -396,7 +396,7 @@ Private Sub btnLamp_Click(sender As Object, e As EventArgs)
         Me.btnLamp.Text = "Off"
     Else If Me.btnLamp.Text = "Off" Then
         Try
-            Dim req As WebRequest = WebRequest.Create("https://towering-sword.glitch.me/api/lampu/insert/0")
+            Dim req As WebRequest = WebRequest.Create("https://towering-sword.glitch.me/api/lampu/insert/0/" + txtDeviceName.Text)
             Dim res As WebResponse = req.GetResponse()
             Dim resDS As Stream = res.GetResponseStream()
             Dim reader As StreamReader = New StreamReader(resDS)
