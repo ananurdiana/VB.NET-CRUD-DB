@@ -3,7 +3,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class frmMySQL
 
-    Dim conn As New MySqlConnection("Server=xxx.xxx.xxx.xxx; user=xxx; password=xxx; database=example")
+    Dim conn As New MySqlConnection("Server=10.83.41.228; user=isd; password=isd25108; database=example")
     Dim perintah As New MySqlCommand
     Dim data As New MySqlDataAdapter
     Dim ds As New DataSet
@@ -160,5 +160,11 @@ Public Class frmMySQL
             statusTombol(True, False, False)
             tampilData()
         End If
+    End Sub
+
+    Private Sub btnTampilkanLaporan_Click(sender As Object, e As EventArgs) Handles btnTampilkanLaporan.Click
+        frmLaporanMahasiswa.crtLaporanMahasiswa.SelectionFormula = "{mahasiswa1.jurusan}='" & cmbJurusan.Text & "'"
+        frmLaporanMahasiswa.crtLaporanMahasiswa.Refresh()
+        frmLaporanMahasiswa.Show()
     End Sub
 End Class

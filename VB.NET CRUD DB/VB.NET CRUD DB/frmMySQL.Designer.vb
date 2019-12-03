@@ -32,7 +32,12 @@ Partial Class frmMySQL
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cmbJurusan = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnTampilkanLaporan = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -121,11 +126,51 @@ Partial Class frmMySQL
         Me.Button3.Text = "Hapus"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.btnTampilkanLaporan)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.cmbJurusan)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 299)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(240, 80)
+        Me.GroupBox1.TabIndex = 10
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Laporan"
+        '
+        'cmbJurusan
+        '
+        Me.cmbJurusan.FormattingEnabled = True
+        Me.cmbJurusan.Items.AddRange(New Object() {"TI", "KA", "OM"})
+        Me.cmbJurusan.Location = New System.Drawing.Point(93, 19)
+        Me.cmbJurusan.Name = "cmbJurusan"
+        Me.cmbJurusan.Size = New System.Drawing.Size(121, 21)
+        Me.cmbJurusan.TabIndex = 0
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(6, 22)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Jurusan"
+        '
+        'btnTampilkanLaporan
+        '
+        Me.btnTampilkanLaporan.Location = New System.Drawing.Point(93, 47)
+        Me.btnTampilkanLaporan.Name = "btnTampilkanLaporan"
+        Me.btnTampilkanLaporan.Size = New System.Drawing.Size(75, 23)
+        Me.btnTampilkanLaporan.TabIndex = 6
+        Me.btnTampilkanLaporan.Text = "Tampilkan"
+        Me.btnTampilkanLaporan.UseVisualStyleBackColor = True
+        '
         'frmMySQL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(276, 283)
+        Me.ClientSize = New System.Drawing.Size(271, 391)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -139,6 +184,8 @@ Partial Class frmMySQL
         Me.Name = "frmMySQL"
         Me.Text = "MySQL"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,5 +200,9 @@ Partial Class frmMySQL
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnTampilkanLaporan As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents cmbJurusan As System.Windows.Forms.ComboBox
 
 End Class

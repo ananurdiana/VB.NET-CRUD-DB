@@ -417,5 +417,8 @@ End Sub
 ## Membuat MDI Form
 
 ## Membuat Report
+Untuk membuat laporan menggunana crystal report di visual studio, dan database MySQL, terlebih dahulu harus menmbuat ODBC Connection.
+
+
 
 ## Membuat Installer

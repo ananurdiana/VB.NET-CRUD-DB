@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.VB.NET_CRUD_DB.frmSQLite
+            Me.MainForm = Global.VB.NET_CRUD_DB.frmMySQL
         End Sub
     End Class
 End Namespace
