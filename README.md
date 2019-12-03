@@ -417,8 +417,68 @@ End Sub
 ## Membuat MDI Form
 
 ## Membuat Report
-Untuk membuat laporan menggunana crystal report di visual studio, dan database MySQL, terlebih dahulu harus menmbuat ODBC Connection.
+Untuk membuat laporan menggunakan crystal report di visual studio (install `CRforVS_13_0_12.exe` sebelum mengikuti langkah-langkah berikutnya), dan database MySQL, terlebih dahulu harus menmbuat ODBC Data Source.
+Untuk membuat ODBC Data Source, harus install `mysql-connector-odbc` yang dapat di download dari [Web MySQL](https://dev.mysql.com/downloads/connector/odbc/).
+Setelah selesai install `mysql-connector-odbc`, selanjutnya membuat ODBC Data Source. 
 
+### Membuat ODBC Data Source
+1. Buka `Control Panel` > `Administrative Tools` > `Data Sources (ODBC)`
+2. Klik tombol `Add`
+3. Pilih `MySQL ODBC x.x ANSI Driver`
+4. Klik tombol `Finish`
+5. Isi isian untuk konek ke database, kemudian klik tombol `OK`
+![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/18-BuatKoneksiODBC.png)
+
+### Desain Crystal Report
+1. Buka project
+2. Klik kanan pada project, kemudian `Add` > `New Item`
+3. Pilih `Reporting`
+4. Pilih `Crystal Report`
+5. Berinama file sesuai kebutuhan
+6. Klik tombol `Add`
+    ![alt text](https://github.com/ananurdiana/VB.NET-CRUD-DB/blob/master/dokumen/19-MembuatCrystalReport-01.png)
+7. Pilih `As a Blank Report`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/20-MembuatCrystalReport-02.png)
+8. Setelah itu akan muncul tampilan Crystal Report kosong. Klik kanan pada `Data Fields`, kemudian klik `Log Off or On Server...`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/21-MembuatCrystalReport-03.png)
+9. Pada `Create New Connection`, klik `ODBC (RDO)`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/22-MembuatCrystalReport-04.png)
+10. Pilih nama ODBC Data Source yang tadi di atur di `Control Panel`, kemudian klik tombol `Next`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/23-MembuatCrystalReport-05.png)
+11. Isi User ID dan Password untuk login ke database, kemudian klik tombol `Finish`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/24-MembuatCrystalReport-06.png)
+12. Kemudian klik tombol `Close`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/25-MembuatCrystalReport-07.png)
+13. Klik kanan pada `Data Fields`, kemudian klik `Database Expert...`. 
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/26-MembuatCrystalReport-08.png)
+14. Pada `Data Expert` pilih tabel yang akan di jadikan report, kemudian tambahkan ke kolom sebelah kanan. Kemudian klik tombol `OK`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/27-MembuatCrystalReport-09.png)
+15. Tambahkan Field dari `Field Explorer` ke `Sections 3 (Details)` pada Crystal Report
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/28-MembuatCrystalReport-10.png)
+
+### Membuat Form untuk menampilkan Crystal Report
+1. Klik kanan pada project, kemudian `Add` > `New Item`
+2. Pilih `Windows Forms` kemudian pilih `Windows Forms`, beri nama file sesuai kebutuhan kemudia klik tombol `Add`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/29-MembuatCrystalReport-11.png)
+3. Tambahkan `CrystalReportViewer` dari `Toolbox` ke Form yang baru di buat
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/30-MembuatCrystalReport-12.png)
+4. Pilih Component `CrystalReportViewer` kemudian klik segitiga kecil di sebelah kanan atas. Kemudian klik `Choose a Crystal Report...`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/31-MembuatCrystalReport-13.png)
+5. Pilih file Crystal Report yang tadi dibuat, kemudian klik tombol `OK`
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/32-MembuatCrystalReport-14.png)
+6. Selanjutnya akan muncul data sample yang di random oleh Visual Studio
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/33-MembuatCrystalReport-15.png)
+    
+### Menampilkan Crystal Report
+1. Buka form `MySQL`, kemudian tambahkan combobox dan button seperti pada gambar
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/34-MenampilkanCrystalReport-01.png)
+2. Tambahkan event click pada button
+    ```vb
+        frmLaporanMahasiswa.crtLaporanMahasiswa.SelectionFormula = "{mahasiswa1.jurusan}='" & cmbJurusan.Text & "'"
+        frmLaporanMahasiswa.crtLaporanMahasiswa.Refresh()
+        frmLaporanMahasiswa.Show()
+    ```
+    ![alt text](https://raw.githubusercontent.com/ananurdiana/VB.NET-CRUD-DB/master/dokumen/35-MenampilkanCrystalReport-05.png)
 
 
 ## Membuat Installer
