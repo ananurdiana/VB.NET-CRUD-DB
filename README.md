@@ -414,6 +414,40 @@ End Sub
 
 ## SQL Server Express
 
+## Oracle DataAccess
+https://www.oracle.com/database/technologies/net-downloads.html
+https://developer.oracle.com/dotnet/cook-dotnet.html
+
+### Prasyarat
+1. Install Oracle Database XE
+2. Install [Oracle Data Access Components - .NET Downloads](https://www.oracle.com/database/technologies/net-downloads.html)
+
+### Membuat Form baru
+1. From Project menu, select Add Reference...
+2. Scroll down the list of Component Names and select Oracle.DataAccess. Click OK.
+3. Script Koneksi
+```vb
+        Dim dt As DataTable
+
+        Dim oradb As String = "Data Source=(DESCRIPTION=" _
+         + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=xxx.xxx.xxx.xxx)(PORT=1521)))" _
+         + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=IDUMSD)));" _
+         + "User Id=user;Password=inipassword;"
+        Dim conn As New OracleConnection(oradb)
+        conn.Open()
+        Dim cmd As New OracleCommand
+        cmd.Connection = conn
+        cmd.CommandText = "SELECT * FROM EMPLOYEE"
+        cmd.CommandType = CommandType.Text
+        Dim dr As OracleDataReader = cmd.ExecuteReader()
+        dr.Read()
+        dt = New DataTable
+        dt.Load(dr)
+        DataGridView1.DataSource = dt
+        'Label1.Text = dr.Item("jml")
+        conn.Dispose()
+```
+
 ## Membuat MDI Form
 
 ## Membuat Report
