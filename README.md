@@ -516,3 +516,30 @@ Setelah selesai install `mysql-connector-odbc`, selanjutnya membuat ODBC Data So
 
 
 ## Membuat Installer
+## DataGridVeiw to CSV
+```vb
+Private Sub subExportDGVToCSV(ByVal strExportFileName As String, ByVal DataGridView As DataGridView, Optional ByVal blnWriteColumnHeaderNames As Boolean = False, Optional ByVal strDelimiterType As String = ",")
+
+    Dim sr As StreamWriter = File.CreateText(strExportFileName)
+    Dim strDelimiter As String = strDelimiterType
+    Dim intColumnCount As Integer = DataGridView.Columns.Count - 1
+    Dim strRowData As String = ""
+
+    If blnWriteColumnHeaderNames Then
+        For intX As Integer = 0 To intColumnCount
+            strRowData += Replace(DataGridView.Columns(intX).Name, strDelimiter, "") & IIf(intX < intColumnCount, strDelimiter, "")
+        Next intX
+        sr.WriteLine(strRowData)
+    End If
+
+    For intX As Integer = 0 To DataGridView.Rows.Count - 1
+        strRowData = ""
+        For intRowData As Integer = 0 To intColumnCount
+            strRowData += Replace(DataGridView.Rows(intX).Cells(intRowData).Value, strDelimiter, "") & IIf(intRowData < intColumnCount, strDelimiter, "") '''''''''highlights this row
+        Next intRowData
+        sr.WriteLine(strRowData)
+    Next intX
+    sr.Close()
+
+End Sub
+```
